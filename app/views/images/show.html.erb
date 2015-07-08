@@ -1,0 +1,8 @@
+<h3><%= @image.title %></h3>
+
+<%= image_tag @image.attachment.url(:thumb) %>
+
+<%= link_to 'Delete. Err ner!', image_path(@image),
+      :data => {:confirm => "Err yer shuuurrr?",
+                :method  => "delete"}%>
+<%= link_to "Edit", edit_image_path %>

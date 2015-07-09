@@ -1,11 +1,11 @@
-<h3>erlksnsakjdngf</h3>
+<h3>Le Ermajes</h3>
 
-<div class="container">
-    <div class="row">
+    <div class="images">
     <% @images.each do |image| %>
-      <div class="col-md-3">
-        <a href="<%= image_path(image)%>"><%= image_tag(image.attachment.url(:thumb), size: "255x255") %></a>
-      </div>
-    <% end %>
+    <div class="wrapper">
+        <div class="col-md-3 image-sizing">
+          <a href="<%= image_path(image)%>"><%= image_tag(image.attachment.url(:thumb), size: "255x255") %></a>
+        </div>
+      <% end %>
     </div>
-</div>
+  </div>

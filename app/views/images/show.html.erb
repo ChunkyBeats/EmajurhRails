@@ -2,9 +2,11 @@
 <p><%= link_to 'Back', root_path %></p>
 <%= image_tag(@image.attachment.url(), height: '750') %>
 
+<% if current_user %>
 <% if current_user.id == @image.user_id  %>
   <p><%= link_to 'Delete', image_path(@image),
         :data => {:confirm => "Err yer shuuurrr?",
                   :method  => "delete"}%> |
   <%= link_to "Edit", edit_image_path %></p>
+<% end %>
 <% end %>

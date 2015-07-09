@@ -56,6 +56,7 @@ a:hover {
   margin: 10px;
 }
 
+
 .form-group {
 }
 
@@ -87,11 +88,34 @@ a:hover {
 #submit {
   margin: 10px 0;
 }
+
 #logo a {
   font-size: 2em;
   color: #85BF25;
 }
 
-img {
+
+.images {
+  border-radius: 10px;
+  background-color: #303030;
+  padding: 10px;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+
+.row {
+  padding-top: 10px;
+  padding-left: 25px;
+  // display: inline-block;
+}
+
+.image-sizing {
+  text-align: center;
+  // margin: 1px;
   overflow: hidden;
+  padding: 4px;
+  // border-style: solid;
+  // border-width: 1px;
+  // border-color: #85BF25;
 }

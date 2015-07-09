@@ -1,5 +1,11 @@
 <h3>erlksnsakjdngf</h3>
 
-<% @images.each do |image| %>
-  <a href="<%= image_path(image)%>"><%= image_tag image.attachment.url(:thumb) %></a>
-  <% end %>
+<div class="container">
+    <div class="row">
+    <% @images.each do |image| %>
+      <div class="col-md-3">
+        <a href="<%= image_path(image)%>"><%= image_tag(image.attachment.url(:thumb), size: "255x255") %></a>
+      </div>
+    <% end %>
+    </div>
+</div>

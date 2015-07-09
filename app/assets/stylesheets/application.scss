@@ -17,6 +17,7 @@
 @import "bootstrap";
 
 body {
+  font-family: Arial, sans-serif;
   background-color: #121011;
   color: #fff;
 }
@@ -33,14 +34,33 @@ label {
   color: #FFF;
 }
 
+a {
+  color: #85BF25;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #85BF25;
+  border-radius: 4px;
+}
+
 .forms {
   color: #000000;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #303030;
   padding: 10px;
+  margin: 10px;
 }
 
 .form-group {
+}
+
+.text-format {
+  color: #85BF25;
 }
 
 .navbar {
@@ -52,8 +72,12 @@ label {
   color: #FFF;
 }
 
+
 .navbar-inverse .navbar-nav > li > a{
   color: #FFF;
+  &:hover {
+    color: #85BF25;
+  }
 }
 
 .container {
@@ -62,4 +86,12 @@ label {
 
 #submit {
   margin: 10px 0;
+}
+#logo a {
+  font-size: 2em;
+  color: #85BF25;
+}
+
+img {
+  overflow: hidden;
 }

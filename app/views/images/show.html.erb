@@ -1,6 +1,6 @@
 <h3><%= @image.title %></h3>
-
-<%= image_tag @image.attachment.url() %>
+<p><%= link_to 'Back', root_path %></p>
+<%= image_tag(@image.attachment.url(), height: '750') %>
 
 <% if current_user.id == @image.user_id  %>
   <p><%= link_to 'Delete', image_path(@image),
@@ -8,4 +8,3 @@
                   :method  => "delete"}%> |
   <%= link_to "Edit", edit_image_path %></p>
 <% end %>
-<%= link_to 'Back', root_path %>

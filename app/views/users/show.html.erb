@@ -1,4 +1,10 @@
 <h3>This is your account: <%= @user.username %></h3>
 
 <p>Your account was created <%= @user.timeRegistered %> ago. </p>
-<p>You've uploaded <%= @user.images.length %> emajes to the gallery</p
+<p>You've uploaded <%= @user.images.length %> emajes to the gallery</p>
+
+<% if @images.any? %>
+  <% @images.each do |image| %>
+    <a href="<%= image_path(image)%>"><%= image_tag image.attachment.url(:thumb) %></a>
+  <% end %>
+<% end %>

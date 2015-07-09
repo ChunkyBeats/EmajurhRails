@@ -18,10 +18,29 @@
 
 body {
   background-color: #121011;
+  color: #fff;
 }
 
 h1,h2,h3,h4,h5 {
   color: #FFF;
+}
+
+label {
+  color: #FFF;
+}
+
+#image_attachment {
+  color: #FFF;
+}
+
+.forms {
+  color: #000000;
+  border-radius: 25px;
+  background-color: #303030;
+  padding: 10px;
+}
+
+.form-group {
 }
 
 .navbar {
@@ -39,4 +58,8 @@ h1,h2,h3,h4,h5 {
 
 .container {
   margin-top: 70px;
+}
+
+#submit {
+  margin: 10px 0;
 }

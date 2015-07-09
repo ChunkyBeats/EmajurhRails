@@ -11,7 +11,7 @@ class ImagesController < ApplicationController
       redirect_to image_path(@image)
     else
       flash[:alert] = "You shall not upload!!!"
-      redirect :back
+      redirect_to :back
     end
   end
 
@@ -27,7 +27,7 @@ class ImagesController < ApplicationController
       redirect_to '/'
     else
       flash[:alert] = "NERp./"
-      redirect :back
+      redirect_to :back
     end
   end
 
